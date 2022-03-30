@@ -1,0 +1,142 @@
+body {
+    background-image: url("img/home-min.gif");
+    background-color: #cccccc;
+    font-family: 'Mulish', sans-serif;
+    color: #212021;
+}
+
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+h4 {
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+}
+
+.action-green {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #9EC53A;
+    text-align: center;
+    padding: 5px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    transform: translateY(-30px);
+}
+
+.action-green:hover {
+    background-color: #9EC53A;
+    padding: 7px;
+    -webkit-box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.34);
+    box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.34);
+}
+
+.action-orange {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #FE7C1E;
+    text-align: center;
+    padding: 5px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    transform: translateY(-30px);
+}
+
+.action-orange:hover {
+    background-color: #FE7C1E;
+    padding: 7px;
+    -webkit-box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.34);
+    box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.34);
+    color: #fff;
+}
+
+.action-blue {
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #53DAFA;
+    text-align: center;
+    padding: 5px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    font-weight: bold;
+    transform: translateY(-30px);
+}
+
+.action-blue:hover {
+    background-color: #53DAFA;
+    padding: 7px;
+    -webkit-box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.34);
+    -moz-box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.34);
+    box-shadow: 10px 10px 0px 1px rgba(0, 0, 0, 0.34);
+}
+
+
+.boton img:hover {
+    width: 75%;
+}
+
+.barra {
+    position: fixed;
+    bottom: 0;
+}
+
+.mata-izq {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    width: 150px;
+}
+
+.mata-der {
+    position: fixed;
+    bottom: 0;
+    right: 0 !important;
+    z-index: 2;
+    width: 150px;
+}
+
+.logo {
+    max-width: 500px;
+    margin: auto;
+}
+
+
+@media (max-width: 650px) {
+    
+    body{
+        background-image: url("img/home-mobile-min.gif");
+        background-position: fixed;
+    }
+
+    .mata-izq {
+        width: 90px;
+    }
+
+    .mata-der {
+        width: 80px;
+    }
+    
+    .boton img {
+    max-width: 150px !important;
+        
+    }
+    
+    .boton img:hover {
+    max-width: 150px !important;
+        
+    }
+    
+    .camara {
+        margin-bottom: 100px;
+    }
+}

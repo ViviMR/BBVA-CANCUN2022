@@ -1,0 +1,346 @@
+body {
+    background-image: url("img/dkt-aspectos.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-color: #cccccc;
+    font-family: 'Mulish', sans-serif;
+    color: #212021;
+}
+
+a{
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+strong{
+    font-weight: 900;
+}
+
+.barra {
+    position: fixed;
+    bottom: 0;
+}
+
+.mata-izq {
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    width: 150px;
+}
+
+.mata-der {
+    position: fixed;
+    bottom: 0;
+    right: 0 !important;
+    z-index: 2;
+    width: 150px;
+}
+
+.logo {
+    max-width: 500px;
+    margin: auto;
+}
+
+.menu-desktop{
+    background-color: #9EC53A;
+    height: 60px;
+}
+
+
+.cont-desktop{
+    width: 600px;
+    font-weight: 600;
+}
+
+.a-menu-active{
+    background-color: #fff;
+    height: 70px;
+    border-radius: 8px;
+    transform: translateY(-5px);
+    padding-left: 15%;
+}
+
+.a-menu:hover{
+    background-color: #fff;
+    height: 70px;
+    border-radius: 8px;
+    transform: translateY(-5px);
+    padding-left: 15%;
+}
+
+.texto-img{
+    margin-top:20px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.texto-img:hover{
+    margin-top:20px;
+    color: #333333;
+    font-weight: bold;
+}
+
+
+.img-menu img{
+    width: 50px;
+    margin-top: 12px
+}
+
+.a-menu-active .texto-img{
+    margin-top:20px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.card{
+    margin-top: 8px;
+    border-radius: 10px;
+}
+
+.card-header{
+     background-color: #fff;
+}
+
+.card-header h5{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.acordeon-agenda{
+    width: 700px;
+}
+
+.fecha{
+    font-weight: 900;
+    color: #016390;
+    text-decoration: none !important;
+}
+
+.fecha div img{
+    margin-right: 10px;
+}
+
+.fecha span{
+    color: #C5BBBB;
+}
+
+.fecha strong{
+    color: #FF286A;
+}
+
+.flecha{
+    position: absolute;
+    right: 0;
+    padding-right: 15px;
+    top: 20px;
+}
+
+.btn-link:hover {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+
+.table-gray{
+    color: #828282;
+    font-weight: 400;
+    width: 40%;
+}
+
+.dia{
+  color: #016390;
+    font-weight: 900;
+}
+
+.th{
+         border-top: 1px solid #fff !important;
+}
+
+.table td{
+    border-top: 1px solid #FF286A;
+}
+
+.table{
+    font-weight: 400;
+}
+
+.tab-content{
+    color: #4F4F4F;
+}
+
+.checkin{
+    font-style: italic;
+    color: #4F4F4F !important;
+}
+
+.boton-destino{
+    background-image: url("img/fondo-zoom-xoximilco.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px;
+    position: relative;
+}
+
+.boton-xcaret{
+    background-image: url("img/fondo-xcaret.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 100% center;
+    background-color: #000000;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px;
+    position: relative;
+}
+.flecha-xoxi{
+    position: absolute;
+    right: 0;
+    top:27%;
+
+}
+
+.link-rosa{
+    color: #FF286A !important;
+    font-weight: 900;
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.modal-content{
+    background-color: #333333;
+}
+
+.navbar-toggler{
+    background: rgba(1,178,243,1);
+background: -moz-linear-gradient(top, rgba(1,178,243,1) 0%, rgba(1,99,144,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(1,178,243,1)), color-stop(100%, rgba(1,99,144,1)));
+background: -webkit-linear-gradient(top, rgba(1,178,243,1) 0%, rgba(1,99,144,1) 100%);
+background: -o-linear-gradient(top, rgba(1,178,243,1) 0%, rgba(1,99,144,1) 100%);
+background: -ms-linear-gradient(top, rgba(1,178,243,1) 0%, rgba(1,99,144,1) 100%);
+background: linear-gradient(to bottom, rgba(1,178,243,1) 0%, rgba(1,99,144,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01b2f3', endColorstr='#016390', GradientType=0 );
+    border:0px !important:
+}
+
+#navbarTogglerDemo02 > ul > li.nav-item > a > i > img{
+    width: 50px;
+}
+
+.menu-mobile .nav-item:hover{
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+.menu-mobile .nav-item a{
+   text-align: center;
+    color: #fff !important;
+    font-weight: 900;
+    padding: 20px
+}
+
+.menu-mobile{
+        display: none;
+    }
+.menu-desktop{
+    display: block;
+}
+
+.acordeon-agenda h4{
+    color: #fff;
+    font-weight: 700;
+}
+
+.acordeon-agenda {
+    margin-bottom: 100px;
+}
+
+.acordeon-agenda h4{
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
+.contenido-card{
+        padding: 15px 30px 30px 25px;
+}
+
+.contenido-card-aloja{
+       background: #FE7C1E!important;
+border-radius: 10px;
+        padding: 15px 30px 7px 35px;
+        color: #fff;
+        font-style: italic;
+}
+
+.contenido-card-alimentos1{
+       background: #016390!important;
+border-radius: 10px;
+        padding: 15px 30px 7px 35px;
+        color: #fff;
+       
+}
+
+.contenido-card-bebidas1{
+       background: #333333 !important;
+border-radius: 10px;
+        padding: 15px 30px 7px 35px;
+        color: #fff;
+       
+}
+
+.modal-header{
+    border-bottom: 0px !important;
+}
+
+.modal-footer{
+    border-top: 0px !important;
+}
+
+@media (max-width: 700px) {
+     .menu-desktop{
+        display: none;
+    }
+    
+    .menu-mobile{
+        display: block;
+    }
+    
+    
+    body{
+        background-image: url("img/fondo-aspectos.png");
+        background-position: fixed;
+    }
+    
+    .acordeon-agenda{
+    width: 100%;
+        padding: 5px;
+    }
+
+    .mata-izq {
+        width: 90px;
+    }
+
+    .mata-der {
+        width: 80px;
+    }
+    
+    .cont-desktop{
+    width: 100%;
+}
+    
+    .nav-link{
+    padding: 2px;
+}
+    
+    .card-body{
+       padding: 5px;
+    }
+    
+    
+}
