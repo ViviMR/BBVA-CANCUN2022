@@ -54,12 +54,11 @@ strong{
     font-weight: 600;
 }
 
-.a-menu-active{
+.a-menu-active:hover {
     background-color: #fff;
     height: 70px;
     border-radius: 8px;
     transform: translateY(-5px);
-    padding-left: 15%;
 }
 
 .a-menu:hover{
@@ -67,13 +66,14 @@ strong{
     height: 70px;
     border-radius: 8px;
     transform: translateY(-5px);
-    padding-left: 15%;
+   
 }
 
 .texto-img{
     margin-top:20px;
     color: #333333;
     font-weight: bold;
+    font-size: 14px;
 }
 
 .texto-img:hover{

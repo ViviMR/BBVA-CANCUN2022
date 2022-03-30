@@ -19,6 +19,22 @@
 </head>
 
 <body>
+    <header>
+
+        <nav>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -37,13 +53,11 @@
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen></iframe>
                     <p class="mt-5">
-                        La
-                        noche de fiesta en Cancún más
+                        La noche de fiesta en Cancún más
                         divertida.
                         Las fiestas mexicanas son las mejores, y
                         sobre el agua, en Cancún, ¡Mejor! <br>
-                        Súbete
-                        a una colorida trajinera que te llevará a
+                        Súbete a una colorida trajinera que te llevará a
                         través de los canales de Xoximilco
                         mientras degustas lo mejor de la cocina
                         mexicana, y entras en ambiente con la
@@ -281,53 +295,47 @@
 
     <div class="section menu-desktop">
         <div class="container cont-desktop">
-            <div class="row mt-5">
-                <div class="col-6 ">
+            <div class="row mt-4 mb-4">
+                <div class="col-4">
                     <div class="a-menu-active">
                         <a href="#">
                             <div class="d-inline-flex">
                                 <div class="img-menu">
-                                    <img src="img/calendar.png" alt="">
+                                    <img src="./img/calendar.png" alt="">
                                 </div>
                                 <div class="texto-img">
                                     Agenda de viaje
                                 </div>
                             </div>
-
                         </a>
                     </div>
-
-
-
-
                 </div>
-                <div class="col-6 ">
+
+                <div class="col-4">
                     <div class="a-menu">
                         <a href="aspectos.html">
                             <div class="d-inline-flex ">
                                 <div class="img-menu">
-                                    <img src="img/case.png" alt="">
+                                    <img src="./img/case.png" alt="">
                                 </div>
                                 <div class="texto-img">
                                     Aspectos importantes
                                 </div>
                             </div>
-
                         </a>
                     </div>
-
                 </div>
-                <!-- 
-                 <div class="col-12 col-md-4 a-menu">
-                   <div class="d-inline-flex">
-                       <div class="img-menu">
-                           <img src="img/calendar.png" alt="">
-                       </div>
-                       <div class="texto-img">
-                          Reseña fotográfica
-                       </div>
-                   </div>
-                </div> -->
+
+                <div class="col-4 col-md-4 a-menu">
+                    <div class="d-inline-flex">
+                        <div class="img-menu">
+                            <img src="./img/camera.png" alt="">
+                        </div>
+                        <div class="texto-img">
+                            Reseña fotográfica
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -1062,7 +1070,11 @@
 
     </div>
 
-
+    <div>
+        <a href="">
+            Descargar agenda
+        </a>
+    </div>
 
 
 
@@ -1094,7 +1106,7 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
     <!-- Script de Andres -->
-<script>
+    <script>
         let urlString = window.location.href; //obtenemos el string de la url
         let url = new URL(urlString); //convertimos el string a un objeto
         let fechaEvento = url.searchParams.get("dia"); //obtenemos el valor de el parametro "dia"
@@ -1106,7 +1118,7 @@
                 card.querySelector('.btn-link').click() // si es correcto le doy click a boton de card
             }
         }) 
-</script>
+    </script>
 
 </body>
 
