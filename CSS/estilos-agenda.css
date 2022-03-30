@@ -1,5 +1,5 @@
 body {
-    background-image: url("img/fondo-dkt.jpg");
+    background-image: url("../img/fondo-dkt.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -298,7 +298,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01b2f3', end
     }
     
     body{
-        background-image: url("img/home-mobile-min.gif");
+        background-image: url("../img/home-mobile-min.gif");
         background-position: fixed;
     }
     
