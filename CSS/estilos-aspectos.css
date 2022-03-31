@@ -1,5 +1,5 @@
 body {
-    background-image: url("img/dkt-aspectos.jpg");
+    background-image: url("../img/dkt-aspectos.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -176,7 +176,7 @@ strong{
 }
 
 .boton-destino{
-    background-image: url("img/fondo-zoom-xoximilco.jpg");
+    background-image: url("./img/fondo-zoom-xoximilco.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% center;
@@ -188,7 +188,7 @@ strong{
 }
 
 .boton-xcaret{
-    background-image: url("img/fondo-xcaret.jpg");
+    background-image: url("./img/fondo-xcaret.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% center;
@@ -313,7 +313,7 @@ border-radius: 10px;
     
     
     body{
-        background-image: url("img/fondo-aspectos.png");
+        background-image: url("./img/fondo-aspectos.png");
         background-position: fixed;
     }
     
