@@ -334,7 +334,6 @@ strong {
     }
 
     .menu-mobile {
-        display: block;
         background: url("../img/fondo-mobile.jpg");
         width: 100%;
         height: 100vh;
@@ -345,6 +344,9 @@ strong {
         top: 0%;
         left: 0%;
         z-index: 9;
+    }
+    .menu-mobile--show{
+        display: block;
     }
 
     .menu-mobile-close {
