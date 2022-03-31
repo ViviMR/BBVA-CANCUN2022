@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-position: 100% center;
     background-color: #cccccc;
-    font-family: 'Mulish', sans-serif;
+    font-family: "Mulish", sans-serif;
     color: #212021;
 }
 
@@ -44,10 +44,17 @@ strong {
 }
 
 .menu-desktop {
-    background-color: #9EC53A;
-    height: 60px;
+    background-color: #9ec53a;
+    margin-top: 30px;
 }
 
+.menu-desktop-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0 auto;
+}
 
 .cont-desktop {
     width: 600px;
@@ -56,17 +63,20 @@ strong {
 
 .a-menu-active:hover {
     background-color: #fff;
-    height: 70px;
     border-radius: 8px;
     transform: translateY(-5px);
 }
 
+.a-menu,
+.a-menu-active {
+    padding: 12px;
+    transition: all 0.5s;
+}
+
 .a-menu:hover {
     background-color: #fff;
-    height: 70px;
     border-radius: 8px;
     transform: translateY(-5px);
-
 }
 
 .texto-img {
@@ -82,10 +92,9 @@ strong {
     font-weight: bold;
 }
 
-
 .img-menu img {
     width: 50px;
-    margin-top: 12px
+    margin-top: 12px;
 }
 
 .a-menu-active .texto-img {
@@ -119,18 +128,17 @@ strong {
 }
 
 .fecha span {
-    color: #C5BBBB;
+    color: #c5bbbb;
 }
 
 .fecha strong {
-    color: #FF286A;
+    color: #ff286a;
 }
 
 .flecha {
     position: absolute;
     right: 0;
     padding-right: 15px;
-
 }
 
 .btn-link:hover {
@@ -139,12 +147,11 @@ strong {
 }
 
 .nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    background-color: #9EC53A;
+.nav-pills .show > .nav-link {
+    background-color: #9ec53a;
     border-radius: 8px;
-    border: solid 1px #9EC53A;
+    border: solid 1px #9ec53a;
 }
-
 
 .acordeon-agenda {
     margin-bottom: 100px;
@@ -157,7 +164,7 @@ strong {
 .acordeon-agenda .nav-link {
     background-color: #fff;
     border-radius: 8px;
-    border: solid 1px #9EC53A;
+    border: solid 1px #9ec53a;
     text-align: center;
     margin: 2px;
     height: 55px;
@@ -180,7 +187,7 @@ strong {
 }
 
 .table td {
-    border-top: 1px solid #FF286A;
+    border-top: 1px solid #ff286a;
 }
 
 .table {
@@ -188,12 +195,12 @@ strong {
 }
 
 .tab-content {
-    color: #4F4F4F;
+    color: #4f4f4f;
 }
 
 .checkin {
     font-style: italic;
-    color: #4F4F4F !important;
+    color: #4f4f4f !important;
 }
 
 .boton-destino {
@@ -224,11 +231,10 @@ strong {
     position: absolute;
     right: 0;
     top: 27%;
-
 }
 
 .link-rosa {
-    color: #FF286A !important;
+    color: #ff286a !important;
     font-weight: 900;
     text-decoration: underline !important;
     cursor: pointer;
@@ -238,12 +244,15 @@ strong {
     background-color: #333333;
 }
 
-
-
 .navbar-toggler {
     background: rgba(1, 178, 243, 1);
     background: -moz-linear-gradient(top, rgba(1, 178, 243, 1) 0%, rgba(1, 99, 144, 1) 100%);
-    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(1, 178, 243, 1)), color-stop(100%, rgba(1, 99, 144, 1)));
+    background: -webkit-gradient(
+        left top,
+        left bottom,
+        color-stop(0%, rgba(1, 178, 243, 1)),
+        color-stop(100%, rgba(1, 99, 144, 1))
+    );
     background: -webkit-linear-gradient(top, rgba(1, 178, 243, 1) 0%, rgba(1, 99, 144, 1) 100%);
     background: -o-linear-gradient(top, rgba(1, 178, 243, 1) 0%, rgba(1, 99, 144, 1) 100%);
     background: -ms-linear-gradient(top, rgba(1, 178, 243, 1) 0%, rgba(1, 99, 144, 1) 100%);
@@ -252,7 +261,7 @@ strong {
     border: 0px !important;
 }
 
-#navbarTogglerDemo02>ul>li.nav-item>a>i>img {
+#navbarTogglerDemo02 > ul > li.nav-item > a > i > img {
     width: 50px;
 }
 
@@ -264,7 +273,7 @@ strong {
     text-align: center;
     color: #fff !important;
     font-weight: 900;
-    padding: 20px
+    padding: 20px;
 }
 
 .menu-mobile {
@@ -274,9 +283,10 @@ strong {
 #button-menu-mobile {
     height: 50px;
     width: 50px;
-    background: linear-gradient(180.29deg, #01B4F3 34.11%, #016390 141.57%);
+    background: linear-gradient(180.29deg, #01b4f3 34.11%, #016390 141.57%);
     border: none;
     border-radius: 9px;
+    padding: 12px;
 }
 
 #button-menu-mobile img {
@@ -304,6 +314,20 @@ strong {
     color: #fff;
 }
 
+.logo-container {
+    position: relative;
+}
+
+.logo-container-button-menu-mobile {
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(180.29deg, #01b4f3 34.11%, #016390 141.57%);
+    border: none;
+    border-radius: 9px;
+    padding: 12px;
+    display: none;
+}
+
 @media (max-width: 700px) {
     .menu-desktop {
         display: none;
@@ -311,6 +335,58 @@ strong {
 
     .menu-mobile {
         display: block;
+        background: url("../img/fondo-mobile.jpg");
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .menu-mobile-close {
+        padding: 16px;
+        text-align: right;
+        padding-right: 29px;
+    }
+
+    .menu-mobile-list {
+        margin: 0;
+        padding: 0;
+        padding-left: 20%;
+    }
+
+    .menu-mobile-item {
+        list-style: none;
+        border-radius: 17px;
+        padding: 15px;
+    }
+
+    .menu-mobile-item:hover {
+        list-style: none;
+        background: #ffffff45;
+        border-radius: 17px;
+        padding: 15px;
+    }
+
+    .menu-mobile-item a {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .menu-mobile-item a h3 {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 19px;
+        line-height: 24px;
+        text-align: right;
+        color: #ffffff;
+        margin: 0 15px;
+    }
+
+    .menu-mobile-item a img {
+        width: 64px;
     }
 
     body {
@@ -343,5 +419,20 @@ strong {
         padding: 5px;
     }
 
+    .logo-container .logo {
+        max-width: 250px;
+    }
 
+    .logo-container-button-menu-mobile {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        height: 50px;
+        width: 50px;
+        background: linear-gradient(180.29deg, #01b4f3 34.11%, #016390 141.57%);
+        border: none;
+        border-radius: 9px;
+        padding: 12px;
+        display: block;
+    }
 }

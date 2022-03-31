@@ -19,6 +19,33 @@
 </head>
 
 <body>
+    <div class="menu-mobile">
+        <div class="menu-mobile-close">
+            <img src="./img/barras-menu.png" alt="">
+        </div>
+        <div class="menu-mobile-content">
+            <ul class="menu-mobile-list">
+                <li class="menu-mobile-item">
+                    <a href="#">
+                        <h3>Agenda viaje</h3>
+                        <img src="./img/calendar.png" alt="calendar">
+                    </a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="#">
+                        <h3>Aspectos importantes</h3>
+                        <img src="./img/case.png" alt="Case">
+                    </a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="#">
+                        <h3>Reseña fotográfica</h3>
+                        <img src="./img/camera.png" alt="Camera">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -244,55 +271,19 @@
         </div>
     </div>
 
-    <div class="menu-mobile">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar" id="button-menu-mobile" type="button" data-toggle="collapse"
-                data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <img src="./img/barras-menu.png" alt="">
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <i><img src="./img/calendar.png" alt=""></i>
-                            Agenda de viaje
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aspectos.html"><i><img src="./img/case.png" alt=""></i>Aspectos a
-                            tener
-                            en cuenta </a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <i><img src="./img/camera.png" alt=""></i>
-                            Reseña fotográfica
-                            <span class="sr-only">(current)</span>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-
-    </div>
-
-
-
-    <div class="container">
+    <div class="logo-container container">
         <div class="logo mt-5">
             <img src="img/logo-evento.png" alt="" class="img-fluid d-block m-auto">
         </div>
+        <button class="logo-container-button-menu-mobile" type="button">
+            <img src="./img/barras-menu.png" alt="">
+        </button>
     </div>
 
     <div class="section menu-desktop">
-        <div class="container cont-desktop">
-            <div class="row mt-4 mb-4">
-                <div class="col-4">
+        <div class="menu-desktop-container">
+            <div class="menu-desktop-list">
+                <div class="menu-desktop-item">
                     <div class="a-menu-active">
                         <a href="#">
                             <div class="d-inline-flex">
@@ -307,7 +298,7 @@
                     </div>
                 </div>
 
-                <div class="col-4">
+                <div class="menu-desktop-item">
                     <div class="a-menu">
                         <a href="aspectos.html">
                             <div class="d-inline-flex ">
@@ -322,8 +313,8 @@
                     </div>
                 </div>
 
-                <div class="col-4 col-md-4 a-menu">
-                    <div class="d-inline-flex">
+                <div class="menu-desktop-item">
+                    <div class="d-inline-flex a-menu">
                         <div class="img-menu">
                             <img src="./img/camera.png" alt="">
                         </div>
