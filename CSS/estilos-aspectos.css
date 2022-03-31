@@ -225,7 +225,7 @@ background: -o-linear-gradient(top, rgba(1,178,243,1) 0%, rgba(1,99,144,1) 100%)
 background: -ms-linear-gradient(top, rgba(1,178,243,1) 0%, rgba(1,99,144,1) 100%);
 background: linear-gradient(to bottom, rgba(1,178,243,1) 0%, rgba(1,99,144,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01b2f3', endColorstr='#016390', GradientType=0 );
-    border:0px !important:
+    border:0px !important;
 }
 
 #navbarTogglerDemo02 > ul > li.nav-item > a > i > img{
