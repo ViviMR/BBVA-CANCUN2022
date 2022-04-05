@@ -11,7 +11,7 @@ body {
 
 a{
     text-decoration: none !important;
-    color: inherit !important;
+    color: inherit;
 }
 
 strong{
@@ -43,31 +43,12 @@ strong{
     margin: auto;
 }
 
-.menu-desktop{
-    background-color: #9EC53A;
-    height: 60px;
-}
+
 
 
 .cont-desktop{
     width: 600px;
     font-weight: 600;
-}
-
-.a-menu-active{
-    background-color: #fff;
-    height: 70px;
-    border-radius: 8px;
-    transform: translateY(-5px);
-    padding-left: 15%;
-}
-
-.a-menu:hover{
-    background-color: #fff;
-    height: 70px;
-    border-radius: 8px;
-    transform: translateY(-5px);
-    padding-left: 15%;
 }
 
 .texto-img{
@@ -176,7 +157,7 @@ strong{
 }
 
 .boton-destino{
-    background-image: url("./img/fondo-zoom-xoximilco.jpg");
+    background-image: url("../img/fondo-zoom-xoximilco.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% center;
@@ -188,7 +169,7 @@ strong{
 }
 
 .boton-xcaret{
-    background-image: url("./img/fondo-xcaret.jpg");
+    background-image: url("../img/fondo-xcaret.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% center;
@@ -243,13 +224,70 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01b2f3', end
     padding: 20px
 }
 
-.menu-mobile{
-        display: none;
-    }
-.menu-desktop{
-    display: block;
+.menu-mobile .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.26);
 }
 
+.menu-mobile .nav-item a {
+    text-align: center;
+    color: #fff !important;
+    font-weight: 900;
+    padding: 20px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+#button-menu-mobile {
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(180.29deg, #01b4f3 34.11%, #016390 141.57%);
+    border: none;
+    border-radius: 9px;
+    padding: 12px;
+}
+
+#button-menu-mobile img {
+    text-align: center;
+}
+
+
+.menu-desktop {
+    background-color: #9ec53a;
+    margin-top: 30px;
+}
+
+.menu-desktop-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.cont-desktop {
+    width: 600px;
+    font-weight: 600;
+}
+
+.a-menu-active:hover {
+    background-color: #fff;
+    border-radius: 8px;
+    transform: translateY(-5px);
+}
+
+.a-menu,
+.a-menu-active {
+    padding: 12px;
+    transition: all 0.5s;
+}
+
+.a-menu:hover {
+    background-color: #fff;
+    border-radius: 8px;
+    transform: translateY(-5px);
+}
 .acordeon-agenda h4{
     color: #fff;
     font-weight: 700;
@@ -286,13 +324,20 @@ border-radius: 10px;
        
 }
 
-.contenido-card-bebidas1{
-       background: #333333 !important;
-border-radius: 10px;
-        padding: 15px 30px 7px 35px;
-        color: #fff;
-       
+.card-rest{
+    background: #016390!important;
+    border-radius: 8px;
+    color: #fff;
+    padding: 20px;
 }
+
+.card-bares{
+    background: #333333!important;
+    border-radius: 8px;
+    color: #fff;
+    padding: 20px;
+}
+
 
 .modal-header{
     border-bottom: 0px !important;
@@ -302,23 +347,99 @@ border-radius: 10px;
     border-top: 0px !important;
 }
 
+.logo-container {
+    position: relative;
+}
+
+.logo-container-button-menu-mobile {
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(180.29deg, #01b4f3 34.11%, #016390 141.57%);
+    border: none;
+    border-radius: 9px;
+    padding: 12px;
+    display: none;
+}
+
+.introduccion{
+    color: #ffffff !important;
+}
+
+
 @media (max-width: 700px) {
      .menu-desktop{
         display: none;
     }
     
-    .menu-mobile{
+     .menu-mobile {
+        background: url("../img/fondo-mobile.jpg");
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        z-index: 9;
+    }
+    .menu-mobile--show{
         display: block;
     }
-    
+
+    .menu-mobile-close {
+        padding: 16px;
+        text-align: right;
+        padding-right: 29px;
+    }
+
+    .menu-mobile-list {
+        margin: 0;
+        padding: 0;
+        padding-left: 20%;
+    }
+
+    .menu-mobile-item {
+        list-style: none;
+        border-radius: 17px;
+        padding: 15px;
+    }
+
+    .menu-mobile-item:hover {
+        list-style: none;
+        background: #ffffff45;
+        border-radius: 17px;
+        padding: 15px;
+    }
+
+    .menu-mobile-item a {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+    }
+
+    .menu-mobile-item a h3 {
+        font-family: "Mulish";
+        font-style: normal;
+        font-weight: 900;
+        font-size: 19px;
+        line-height: 24px;
+        text-align: right;
+        color: #ffffff;
+        margin: 0 15px;
+    }
+
+    .menu-mobile-item a img {
+        width: 64px;
+    }
     
     body{
-        background-image: url("./img/fondo-aspectos.png");
+        background-image: url("../img/fondo-aspectos.png");
         background-position: fixed;
     }
     
     .acordeon-agenda{
-    width: 100%;
+    width: 98%;
         padding: 5px;
     }
 
@@ -342,5 +463,21 @@ border-radius: 10px;
        padding: 5px;
     }
     
+    .logo-container .logo {
+        max-width: 250px;
+    }
+
+    .logo-container-button-menu-mobile {
+        position: absolute;
+        top: 15px;
+        right: 10px;
+        height: 50px;
+        width: 50px;
+        background: linear-gradient(180.29deg, #01b4f3 34.11%, #016390 141.57%);
+        border: none;
+        border-radius: 9px;
+        padding: 12px;
+        display: block;
+    }
     
 }

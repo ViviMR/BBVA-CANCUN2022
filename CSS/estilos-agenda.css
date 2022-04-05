@@ -204,7 +204,7 @@ strong {
 }
 
 .boton-destino {
-    background-image: url("img/fondo-zoom-xoximilco.jpg");
+    background-image: url("../img/fondo-zoom-xoximilco.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% center;
@@ -216,7 +216,7 @@ strong {
 }
 
 .boton-xcaret {
-    background-image: url("img/fondo-xcaret.jpg");
+    background-image: url("../img/fondo-xcaret.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 100% center;
@@ -396,7 +396,7 @@ strong {
     }
 
     body {
-        background-image: url("../img/home-mobile-min.gif");
+        background-image: url("../img/fondo-mobile.jpg");
         background-position: fixed;
     }
 
