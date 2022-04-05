@@ -6,57 +6,59 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/estilos-aspectos.css">
-
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/estilos-aspectos.css">
 
     <title>Aspectos Importantes</title>
 </head>
 
 <body>
-    <div class="menu-mobile">
-        <nav class="navbar navbar-expand-lg navbar-dark ">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
-                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="agenda.html"><i><img src="./img/calendar.png" alt=""></i>Agenda de
-                            viaje <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><i><img src="./img/case.png" alt=""></i>Aspectos a tener en cuenta
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
-    </div>
-
-
-    <div class="container">
+    <div class="logo-container container">
         <div class="logo mt-5">
-            <img src="./img/logo evento.png" alt="" class="img-fluid d-block m-auto">
+            <img src="./img/logo-evento.png" alt="" class="img-fluid d-block m-auto">
+        </div>
+        <button class="logo-container-button-menu-mobile" type="button">
+            <img src="./img/barras-menu.png" alt="">
+        </button>
+    </div>
+    <div class="menu-mobile" id="button-mobile">
+        <div class="menu-mobile-close">
+            <img src="../img/add.png" alt="">
+        </div>
+        <div class="menu-mobile-content">
+            <ul class="menu-mobile-list">
+                <li class="menu-mobile-item">
+                    <a href="agenda.html">
+                        <h3>Agenda viaje</h3>
+                        <img src="./img/calendar.png" alt="calendar">
+                    </a>
+                </li>
+                <li class="menu-mobile-item">
+                    <a href="aspectos.html">
+                        <h3>Aspectos importantes</h3>
+                        <img src="./img/case.png" alt="Case">
+                    </a>
+                </li>
+                <!-- <li class="menu-mobile-item">
+                    <a href="#">
+                        <h3>Reseña fotográfica</h3>
+                        <img src="./img/camera.png" alt="Camera">
+                    </a>
+                </li> -->
+            </ul>
         </div>
     </div>
 
 
+
     <div class="section menu-desktop">
-        <div class="container cont-desktop">
-            <div class="row mt-5">
-                <div class="col-6 ">
+        <div class="menu-desktop-container">
+            <div class="menu-desktop-list">
+                <div class="menu-desktop-item">
                     <div class="a-menu">
                         <a href="agenda.html">
                             <div class="d-inline-flex">
@@ -67,15 +69,11 @@
                                     Agenda de viaje
                                 </div>
                             </div>
-
                         </a>
                     </div>
-
-
-
-
                 </div>
-                <div class="col-6 ">
+
+                <div class="menu-desktop-item">
                     <div class="a-menu-active">
                         <a href="#">
                             <div class="d-inline-flex ">
@@ -86,21 +84,19 @@
                                     Aspectos importantes
                                 </div>
                             </div>
-
                         </a>
                     </div>
-
                 </div>
-                <!-- 
-                 <div class="col-12 col-md-4 a-menu">
-                   <div class="d-inline-flex">
-                       <div class="img-menu">
-                           <img src="img/calendar.png" alt="">
-                       </div>
-                       <div class="texto-img">
-                          Reseña fotográfica
-                       </div>
-                   </div>
+
+                <!--   <div class="menu-desktop-item">
+                    <div class="d-inline-flex a-menu">
+                        <div class="img-menu">
+                            <img src="./img/camera.png" alt="">
+                        </div>
+                        <div class="texto-img">
+                            Reseña fotográfica
+                        </div>
+                    </div>
                 </div> -->
             </div>
         </div>
@@ -111,15 +107,22 @@
     <div class="container acordeon-agenda mt-5">
 
         <h4 class="text-center mb-5">Aspectos importantes</h4>
+        <p class="introduccion">
+            Es un programa TODO INCLUIDO; pasajes, impuestos de salida de los países, alojamiento, excursiones, comidas y tarjeta de asistencia médica.
+            Los gastos extras como llamadas, propinas, lavandería y los no mencionados en el punto anterior, no están incluidos dentro del programa, por lo tanto, están a cargo del viajero.
+            Al llegar al aeropuerto <strong>El Dorado de Bogotá</strong> y <strong>José María Córdova</strong> de <strong>Medellín</strong> frente a los mostradores de Avianca y Volaris, estarán ubicados funcionarios de la agencia de
+            viajes con un letrero del BBVA, en este punto te asistirán con tu proceso de check in.
+        </p>
 
-        <div id="accordion">
+        <img src="img/xcaret/dia1.jpg" alt="" class="d-block img-fluid m-auto ">
+
+        <div id="accordion" class="mt-5">
 
             <!-- Documentos de viaje -->
             <div class="card">
-                <div class="card-header" id="headingOne">
+                <div class="card-header" id="headingOne" data-id="1">
                     <h5 class="mb-0">
-                        <div class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                            aria-controls="collapseOne">
+                        <div class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <div class="fecha">
                                 <div><img src="./img/iconos-aspectos/documentos.png" alt=""> Documentos de Viaje</div>
                                 <img src="./img/chevron-right.png" alt="" class="flecha">
@@ -136,19 +139,17 @@
                             <li>Asegúrate de no tener impedimentos para la salida del país, por demandas como por
                                 ejemplo de alimentos.</li>
                         </ul>
-                        <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                            src="./img/img-aspectos/documentos-viaje.png" alt="">
+                        <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/img-aspectos/documentos-viaje.png" alt="">
                     </div>
                 </div>
             </div>
             <!-- Check Migración -->
             <div class="card">
-                <div class="card-header" id="headingTwo">
+                <div class="card-header" id="headingTwo" data-id="2">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                            aria-expanded="false" aria-controls="collapseTwo">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <div class="fecha">
-                                <div><img src="./img/iconos-aspectos/check-migracion.png" alt=""> Check Migración</div>
+                                <div><img src="./img/iconos-aspectos/check-migracion.png" alt="">Trámites Migración </div>
                                 <img src="./img/chevron-right.png" alt="" class="flecha">
                             </div>
                         </button>
@@ -157,22 +158,27 @@
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                     <div class="card-body">
                         <div class="contenido-card ml-3">
+                            <p style="color: #FE7C1E; font-weight: bold">Migración colombia
+                            </p>
                             <p>Debes realizar tu registro a la ida y regreso en el siguiente enlace antes de pasar por
                                 Migración: <br><br>
-                                <a href="https://apps.migracioncolombia.gov.co/pre-registro/public/preregistro.jsf"
-                                    target="_blank"
-                                    style="text-decoration: underline;"><i>https://apps.migracioncolombia.gov.co/pre-registro/public/preregistro.jsf</i></a>
+                                <a href="https://apps.migracioncolombia.gov.co/pre-registro/public/preregistro.jsf" target="_blank" style="text-decoration: underline; color: #016390; "><i>https://apps.migracioncolombia.gov.co/pre-registro/public/preregistro.jsf</i></a>
                             </p>
+                            <p style="color: #FE7C1E; font-weight: bold">Requisitos ingreso a México</p>
+                            <p>Para viajar a México debes hacer el prechequeo obligatorio. Para diligenciar el formuario ten a la mano el pasaporte, correo electrónico, tiquetes de ida y regreso, reserva de hotel e información detallada sobre tu itinerario durante tu estadía en México.
+
+                                Después de diligenciar el formulario recibirás en su correo electrónico un código QR que deberás presentar <strong>impreso</strong> al oficial de migración al momento de tu llegada a México. </p>
+
+                            <a href="https://embamex.sre.gob.mx/colombia/index.php/servicios-consulares/preguntas-frecuentes" target="_blank" style="text-decoration: underline; color: #016390; "><i>https://embamex.sre.gob.mx/colombia/index.php/servicios-consulares/preguntas-frecuentes</i></a>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- Vuelos y Tiquetes -->
             <div class="card">
-                <div class="card-header" id="headingTiquetes">
+                <div class="card-header" id="headingTiquetes" data-id="3">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTiquetes"
-                            aria-expanded="false" aria-controls="collapseTiquetes">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTiquetes" aria-expanded="false" aria-controls="collapseTiquetes">
                             <div class="fecha">
                                 <div><img src="./img/iconos-aspectos/vuelos-tiquetes.png" alt=""> Vuelos y tiquetes</div>
                                 <img src="./img/chevron-right.png" alt="" class="flecha">
@@ -190,8 +196,7 @@
                                     autorizados cambios de itinerario.</b>
                                 <br><br>
                             </p>
-                            <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                                src="./img/img-aspectos/vuelos-tiquetes.png" alt="">
+                            <img alt="placeholder image" class="img-fluid mx-auto d-block" src="../img/img-aspectos/vuelos-tiquetes.png" alt="">
                             <p style="color: #9EC53A; font-weight: bold">Horarios de vuelo</p>
                             <p>Asegúrate de estar con suficiente antelación en el aeropuerto, tres (3) horas antes de la
                                 salida del vuelo.
@@ -203,10 +208,9 @@
             </div>
             <!-- Equipaje -->
             <div class="card">
-                <div class="card-header" id="headingEquipaje">
+                <div class="card-header" id="headingEquipaje" data-id="4">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEquipaje"
-                            aria-expanded="false" aria-controls="collapseEquipaje">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseEquipaje" aria-expanded="false" aria-controls="collapseEquipaje">
                             <div class="fecha">
                                 <div><img src="./img/iconos-aspectos/equipaje.png" alt=""> Equipaje</div>
                                 <img src="./img/chevron-right.png" alt="" class="flecha">
@@ -230,8 +234,7 @@
                                 <li>Las aerolíneas permiten llevar líquidos o cremas en el equipaje de mano hasta un
                                     máximo de 100 ml. por botella y máximo 10 botellas de 100ml.</li>
                             </ul>
-                            <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                                src="./img/img-aspectos/equipaje.png" alt="">
+                            <img alt="placeholder image" class="img-fluid mx-auto d-block" src="../img/img-aspectos/equipaje.png" alt="">
                             <p style="color: #016390; font-weight: bold">Aerolíneas</p>
                             <ul>
                                 <li>Si tienes un vuelo en conexión nacional el equipaje permitido en bodega es 1 maleta,
@@ -243,16 +246,19 @@
                                 <li>La segunda pieza de equipaje facturada de 23 kg y 158 cm en la suma de todas las
                                     dimensiones, tiene un costo adicional aproximado de US$ 150 por cada trayecto.</li>
                             </ul>
+
+                            <p style="color: #016390; font-weight: bold">Conexión Avianca</p>
+
+                            <p>Los pasajeros con vuelos de conexiones nacionales con Avianca y que su vuelo internacional tambien es con Avianca, deben solicitar al funcionario del aeropuertoo al momento de hacer su check in, que su equipaje sea facturado hasta su destino final, mostrando ambos tiquetes, así evitará recoger su equipaje en el aeropuerto de conexión. </p>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- LLegada cancún -->
             <div class="card">
-                <div class="card-header" id="headingCancun">
+                <div class="card-header" id="headingCancun" data-id="5">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCancun"
-                            aria-expanded="false" aria-controls="collapseCancun">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCancun" aria-expanded="false" aria-controls="collapseCancun">
                             <div class="fecha">
                                 <div><img src="./img/iconos-aspectos/llegada-cancun.png" alt=""> Llegada a Cancún</div>
                                 <img src="./img/chevron-right.png" alt="" class="flecha">
@@ -277,18 +283,16 @@
                                     logística debidamente uniformado e identificado con banderines del BBVA, quienes te
                                     asistirán con tu traslado al hotel.</li>
                             </ul>
-                            <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                                src="./img/img-aspectos/llegada-cancun.png" alt="">
+                            <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/img-aspectos/llegada-cancun.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- LLegada Alojamiento -->
             <div class="card">
-                <div class="card-header" id="headingAlojamiento">
+                <div class="card-header" id="headingAlojamiento" data-id="6">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAlojamiento"
-                            aria-expanded="false" aria-controls="collapseAlojamiento">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAlojamiento" aria-expanded="false" aria-controls="collapseAlojamiento">
                             <div class="fecha">
                                 <div><img src="./img/iconos-aspectos/alojamiento.png" alt=""> Alojamiento</div>
                                 <img src="./img/chevron-right.png" alt="" class="flecha">
@@ -296,17 +300,71 @@
                         </button>
                     </h5>
                 </div>
-                <div id="collapseAlojamiento" class="collapse" aria-labelledby="headingAlojamiento"
-                    data-parent="#accordion">
+                <div id="collapseAlojamiento" class="collapse" aria-labelledby="headingAlojamiento" data-parent="#accordion">
                     <div class="card-body">
                         <div class="contenido-card ml-3">
                             <p class="contenido-card-aloja ml-3"><strong>Paradisus Cancún</strong> <br>
                                 Blvd. Kukulcan km 16.5, Zona Hotelera, 77500 Cancún, Q.R., México<br>
                                 Teléfono: + 52 800 918 0347 <br><br>
                             </p>
-                            <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                                src="./img/img-aspectos/alojamiento.png" alt="">
-                            <p style="font-weight: bold">ACTIVIDADES TERRESTRES, ACUÁTICAS Y DE PLAYA INCLUIDAS DENTRO
+
+                            <div id="carousel-alojamiento-paradisus" class="carousel slide mt-5" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-alojamiento-paradisus" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-alojamiento-paradisus" data-slide-to="1"></li>
+                                    <li data-target="#carousel-alojamiento-paradisus" data-slide-to="2"></li>
+                                    <li data-target="#carousel-alojamiento-paradisus" data-slide-to="3"></li>
+                                     <li data-target="#carousel-alojamiento-paradisus" data-slide-to="4"></li>
+                                      <li data-target="#carousel-alojamiento-paradisus" data-slide-to="5"></li>
+                                     <li data-target="#carousel-alojamiento-paradisus" data-slide-to="6"></li>
+                                     <li data-target="#carousel-alojamiento-paradisus" data-slide-to="7"></li>
+                                     <li data-target="#carousel-alojamiento-paradisus" data-slide-to="8"></li>
+
+                                </ol>
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <img src="../img/hotel/paradisus9.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/hotel/paradisus10.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                     <div class="carousel-item">
+                                        <img src="../img/hotel/paradisus1.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                     <div class="carousel-item">
+                                        <img src="../img/hotel/paradisus2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                     <div class="carousel-item">
+                                        <img src="../img/hotel/paradisus3.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                     <div class="carousel-item">
+                                        <img src="../img/hotel/paradisus4.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                     <div class="carousel-item">
+                                        <img src="../img/hotel/paradisus5.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                     <div class="carousel-item">
+                                        <img src="../img/hotel/paradisus6.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                     <div class="carousel-item">
+                                        <img src="../img/hotel/paradisus7.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    
+
+
+                                </div>
+                                <div class="carousel-control-prev" type="button" data-target="#carousel-alojamiento-paradisus" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </div>
+                                <div class="carousel-control-next" type="button" data-target="#carousel-alojamiento-paradisus" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </div>
+                            </div>
+
+                            <p style="font-weight: bold" class="mt-5">ACTIVIDADES TERRESTRES, ACUÁTICAS Y DE PLAYA INCLUIDAS DENTRO
                                 DEL PLAN
                             </p>
                             8 cristalinas albercas (2 albercas exclusivas para miembros del xhale club.)
@@ -339,18 +397,55 @@
                             <br>
                             <p style="color: #FE7C1E; font-weight: bold">Alojamiento en Bogotá y Medellín
                             </p>
-                            <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                                src="./img/img-aspectos/alojamiento-bogota.png" alt="">
-                            <p style="font-weight: bold">ACTIVIDADES TERRESTRES, ACUÁTICAS Y DE PLAYA INCLUIDAS DENTRO
-                                DEL PLAN
+
+
+                            <div id="carousel-alojamientobta-mde" class="carousel slide mt-5" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-alojamientobta-mde" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-alojamientobta-mde" data-slide-to="1"></li>
+                                    <li data-target="#carousel-alojamientobta-mde" data-slide-to="2"></li>
+                                    <li data-target="#carousel-alojamientobta-mde" data-slide-to="3"></li>
+
+                                </ol>
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <img src="./img/hotel/alojam-1.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <img src="./img/hotel/alojam-2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+
+                                    <div class="carousel-item ">
+                                        <img src="./img/hotel/alojam-3.jpg" class="d-block w-100" alt="...">
+                                    </div>
+
+                                    <div class="carousel-item ">
+                                        <img src="./img/hotel/alojam-4.jpg" class="d-block w-100" alt="...">
+                                    </div>
+
+
+
+                                </div>
+                                <div class="carousel-control-prev" type="button" data-target="#carousel-alojamientobta-mde" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </div>
+                                <div class="carousel-control-next" type="button" data-target="#carousel-alojamientobta-mde" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </div>
+                            </div>
+
+                            <p class="mt-5"> Los pasajeros que por sus vuelos de conexión deben pernoctar en Bogotá o Medellín a la ida o
+                                al regreso, o en ambas fechas, tienen reservado:<br><br>
+                                <span style="font-weight: bold">Hotel Habitel de Bogotá,</span> Avenida el Dorado No. 100-
+                                97 Tel: 601-4199999, que está ubicado a 3 minutos del aeropuerto El Dorado.<br><br>
+                                <span style="font-weight: bold">Lagoon Llano Grande en Rionegro,</span> Km 13+800 vía JMC
+                                vereda El Tablazo, Rionegro, Antioquia <span style="font-weight: bold">Tel:
+                                    604-4406720.</span><br><br>
                             </p>
-                            Los pasajeros que por sus vuelos de conexión deben pernoctar en Bogotá o Medellín a la ida o
-                            al regreso, o en ambas fechas, tienen reservado:<br><br>
-                            <span style="font-weight: bold">Hotel Habitel de Bogotá,</span> Avenida el Dorado No. 100-
-                            97 Tel: 601-4199999, que está ubicado a 3 minutos del aeropuerto El Dorado.<br><br>
-                            <span style="font-weight: bold">Lagoon Llano Grande en Rionegro,</span> Km 13+800 vía JMC
-                            vereda El Tablazo, Rionegro, Antioquia <span style="font-weight: bold">Tel:
-                                604-4406720.</span><br><br>
+
                             <p style="font-weight: bold">Dentro de su paquete tienen incluido:
                             </p>
                             <ul>
@@ -368,10 +463,9 @@
             </div>
             <!-- LLegada Horarios moneda voltaje -->
             <div class="card">
-                <div class="card-header" id="headingHorarios">
+                <div class="card-header" id="headingHorarios" data-id="7">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseHorarios"
-                            aria-expanded="false" aria-controls="collapseHorarios">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseHorarios" aria-expanded="false" aria-controls="collapseHorarios">
                             <div class="fecha">
                                 <div><img src="./img/iconos-aspectos/horarios-moneda-voltaje.png" alt=""> Horarios, moneda
                                     y voltaje</div>
@@ -406,18 +500,16 @@
                             En el hotel es de 110 voltios y las tomas de corriente son iguales a las de
                             Colombia.<br><br>
 
-                            <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                                src="./img/img-aspectos/horarios-monedas.png" alt="">
+                            <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/img-aspectos/horarios-monedas.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- LLegada Compras-->
             <div class="card">
-                <div class="card-header" id="headingCompras">
+                <div class="card-header" id="headingCompras" data-id="8">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCompras"
-                            aria-expanded="false" aria-controls="collapseCompras">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCompras" aria-expanded="false" aria-controls="collapseCompras">
                             <div class="fecha">
                                 <div><img src="./img/iconos-aspectos/compras.png" alt="">Compras</div>
                                 <img src="./img/chevron-right.png" alt="" class="flecha">
@@ -447,18 +539,16 @@
                             </ul>
                             <br>
 
-                            <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                                src="./img/img-aspectos/compras.png" alt="">
+                            <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/img-aspectos/compras.png" alt="">
                         </div>
                     </div>
                 </div>
             </div>
             <!-- LLegada Servicio Medico-->
             <div class="card">
-                <div class="card-header" id="headingMedico">
+                <div class="card-header" id="headingMedico" data-id="9">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseMedico"
-                            aria-expanded="false" aria-controls="collapseMedico">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseMedico" aria-expanded="false" aria-controls="collapseMedico">
                             <div class="fecha">
                                 <div><img src="./img/iconos-aspectos/servicio-med.png" alt="">Servicio Médico</div>
                                 <img src="./img/chevron-right.png" alt="" class="flecha">
@@ -481,10 +571,9 @@
             </div>
             <!-- LLegada Vestuario -->
             <div class="card">
-                <div class="card-header" id="headingVestuario">
+                <div class="card-header" id="headingVestuario" data-id="10">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseVestuario"
-                            aria-expanded="false" aria-controls="collapseVestuario">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseVestuario" aria-expanded="false" aria-controls="collapseVestuario">
                             <div class="fecha">
                                 <div><img src="./img/iconos-aspectos/vestuario.png" alt=""> Vestuario</div>
                                 <img src="./img/chevron-right.png" alt="" class="flecha">
@@ -492,8 +581,7 @@
                         </button>
                     </h5>
                 </div>
-                <div id="collapseVestuario" class="collapse" aria-labelledby="headingVestuario"
-                    data-parent="#accordion">
+                <div id="collapseVestuario" class="collapse" aria-labelledby="headingVestuario" data-parent="#accordion">
                     <div class="card-body">
                         <div class="contenido-card ml-3">
 
@@ -512,15 +600,13 @@
                             repelentes biodegradables.
                             <br><br>
 
-                            <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                                src="./img/img-aspectos/vestuario-1.png" alt="">
+                            <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/img-aspectos/vestuario-1.png" alt="">
                             <p style="font-weight: bold"><br>XOXIMILCO</p>
 
 
                             Recomendamos ropa casual de verano y llevar repelente para mosquitos.
                             <br><br>
-                            <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                                src="./img/img-aspectos/vestuario-2.png" alt="">
+                            <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/vestuario/vestuarioxoxi.jpg" alt="">
                             <p style="font-weight: bold"><br>CEREMONIA DE PREMIACIÓN</p>
 
 
@@ -528,8 +614,46 @@
                             El vestuario para esta ceremonia es Elegante Casual.
                             El número de mesa para la ceremonia de premiación se enviará a tu correo electrónico.
                             <br><br>
-                            <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                                src="./img/img-aspectos/vestuario-3.png" alt="">
+                            
+                            
+
+                            <div id="carousel-vestuario" class="carousel slide mt-5" data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-vestuario" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-vestuario" data-slide-to="1"></li>
+                                    <li data-target="#carousel-vestuario" data-slide-to="2"></li>
+                                    <li data-target="#carousel-vestuario" data-slide-to="3"></li>
+
+                                </ol>
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                        <img src="./img/vestuario/mujer%201.jpg" class="d-block w-100" alt="...">
+                                    </div>
+                                    <div class="carousel-item ">
+                                        <img src="./img/vestuario/hombre.jpg" class="d-block w-100" alt="...">
+                                    </div>
+
+                                    <div class="carousel-item ">
+                                        <img src="./img/vestuario/mujer%202.jpg" class="d-block w-100" alt="...">
+                                    </div>
+
+                                    <div class="carousel-item ">
+                                        <img src="./img/vestuario/hombre-2.jpg" class="d-block w-100" alt="...">
+                                    </div>
+
+
+
+                                </div>
+                                <div class="carousel-control-prev" type="button" data-target="#carousel-vestuario" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </div>
+                                <div class="carousel-control-next" type="button" data-target="#carousel-vestuario" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </div>
+                            </div>
 
                             <p style="font-weight: bold"><br>RESTAURANTES</p>
 
@@ -555,10 +679,9 @@
             </div>
             <!-- LLegada Alimentos y Bebidas -->
             <div class="card">
-                <div class="card-header" id="headingAlimentos">
+                <div class="card-header" id="headingAlimentos" data-id="11">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAlimentos"
-                            aria-expanded="false" aria-controls="collapseAlimentos">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseAlimentos" aria-expanded="false" aria-controls="collapseAlimentos">
                             <div class="fecha">
                                 <div><img src="./img/iconos-aspectos/alimentos-bebidas.png" alt=""> Alimentos y Bebidas
                                 </div>
@@ -567,8 +690,7 @@
                         </button>
                     </h5>
                 </div>
-                <div id="collapseAlimentos" class="collapse" aria-labelledby="headingAlimentos"
-                    data-parent="#accordion">
+                <div id="collapseAlimentos" class="collapse" aria-labelledby="headingAlimentos" data-parent="#accordion">
                     <div class="card-body">
                         <div class="contenido-card ml-3">
 
@@ -583,30 +705,248 @@
                                     salida.</li>
 
                             </ul>
-                            <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                                src="./img/img-aspectos/alimentos-1.png" alt="">
+                            <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/img-aspectos/alimentos-1.png" alt="">
                             <p style="color: #016390; font-weight: bold">Restaurantes</p>
+                            
+                            
+                            <div id="carousel-restaurantes" class="carousel slide " data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-restaurantes" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-restaurantes" data-slide-to="1"></li>
+                                    <li data-target="#carousel-restaurantes" data-slide-to="2"></li>
+                                    <li data-target="#carousel-restaurantes" data-slide-to="3"></li>
+                                     <li data-target="#carousel-restaurantes" data-slide-to="4"></li>
+                                     <li data-target="#carousel-restaurantes" data-slide-to="5"></li>
+                                     <li data-target="#carousel-restaurantes" data-slide-to="6"></li>
+                                     <li data-target="#carousel-restaurantes" data-slide-to="7"></li>
+                                     <li data-target="#carousel-restaurantes" data-slide-to="8"></li>
 
-                            <p class="contenido-card-alimentos1 ml-3"><strong>MALVA FOOD BAZAAR<br></strong><img
-                                    alt="placeholder image" class="img-fluid mx-auto d-block"
-                                    src="./img/img-aspectos/alimentos-1.png" alt="">
-                                <b>Tipo de cocina:</b> Food Bazaar<br>
-                                <b>Servicios:</b>Desayuno, almuerzo y cena<br>
-                                <b>Horario de apertura:</b> 6:30h - 12:00h | 13:00h - 17:00h | 18:00h – 23:00h<br>
-                                <b>Código de vestimenta:</b> informal<br><br>
-                            </p>
+                                </ol>
+                                <div class="carousel-inner">
 
-                            <p style="color: #016390; font-weight: bold">Bares</p>
+                                    <div class="carousel-item active">
+                                      <div class="card-rest">
+                                         <h5><strong>SAL STEAK CAVE<br></strong></h5>
+                                          <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/restaurantes/Sal%20Steak%20Cave.webp" alt="">
+                                          
+                                          <p class="mt-2 mb-4">
+                                              <b>Tipo de cocina:</b> <strong>Steak House: </strong>cortes finos de carne y especialidades de
+marisco<br>
+                                            <b>Servicios:</b> Cena<br>
+                                            <b>Horario de apertura:</b> 18:00h a 23:00h<br>
+                                            <b>Código de vestimenta:</b>Elegante informal
+                                          </p>
+                                      </div>
+                                       
+                                    </div>
+                                    <div class="carousel-item ">
+                                      <div class="card-rest">
+                                         <h5><strong>MALVA FOOD BAZAAR</strong></h5>
+                                          <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/restaurantes/Malva%20Food%20Bazaar%20Restaurant.webp" alt="">
+                                          
+                                          <p class="mt-2 mb-4">
+                                              <b>Tipo de cocina:</b> Food Bazaar<br>
+                                            <b>Servicios:</b> Desayuno, almuerzo y cena<br>
+                                            <b>Horario de apertura:</b> 6:30h - 12:00h | 13:00h - 17:00h | 18:00h – 23:00h<br>
+                                            <b>Código de vestimenta:</b> Informal<br>
+                                          </p>
+                                      </div>
+                                    </div>
 
-                            <p class="contenido-card-bebidas1 ml-3"><strong>GINGER BAR<br></strong><img
-                                    alt="placeholder image" class="img-fluid mx-auto d-block"
-                                    src="./img/img-aspectos/alimentos-1.png" alt="">
-                                <b>Tipo de cocina:</b> Mexicana<br>
-                                <b>Almuerzo y cena:</b> Tacos<br>
-                                <b>Código de vestimenta:</b> casual<br>
-                                <b>Horario de apertura:</b> <br>Almuerzo de 11:00am a 5:00 pm<br>
-                                Cena de 6:00pm a 11:00 pm<br><br>
-                            </p>
+                                    <div class="carousel-item ">
+                                       
+                                        <div class="card-rest">
+                                         <h5><strong>RESTAURANTE CIELO</strong></h5>
+                                          <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/restaurantes/Cielo.webp" alt="">
+                                          
+                                          <p class="mt-2 mb-4">
+                                             <b>Tipo de cocina:</b>Mexicana contemporánea<br>
+                                            <b>Servicios:</b> Cena<br>
+                                            <b>Horario de apertura:</b> 18:00h a 23:00h todos los días<br>
+                                            <b>Código de vestimenta:</b> Informal
+                                          </p>
+                                      </div>
+                                       
+                                    </div>
+
+                                    <div class="carousel-item ">
+                                      
+                                      <div class="card-rest">
+                                         <h5><strong>LUNCH BOX</strong></h5>
+                                          <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/restaurantes/lunch-box.webp" alt="">
+                                          
+                                          <p class="mt-2 mb-4">
+                                             <b>Tipo de cocina:</b>Almuerzo: Comida callejera latinoamericana <br>
+                                           Cena: Humo y cocina latinoamericana<br>
+
+                                           <b>Horario de apertura:</b> Almuerzo de 12:00h a 17:00h. Cena de 18:00h a
+                                           23:00h<br>
+                                           <b>Código de vestimenta:</b> Informal
+                                          </p>
+                                      </div>
+                                      
+                                      
+                                      
+                                    </div>
+                                     <div class="carousel-item ">
+                                      
+                                      <div class="card-rest">
+                                         <h5><strong>LEMON FISH</strong></h5>
+                                          <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/restaurantes/lemon.webp" alt="">
+                                          
+                                          <p class="mt-2 mb-4">
+                                             <b>Tipo de cocina:</b> Cocina japonesa y nikkei<br>
+                                           <b>Servicios:</b> Cena<br>
+
+                                           <b>Horario de apertura:</b> 18:00h a 23:00h todos los días<br>
+                                           <b>Código de vestimenta:</b> Informal
+                                          </p>
+                                      </div>
+                                
+                                    </div>
+                                     <div class="carousel-item ">
+                                       
+                                       <div class="card-rest">
+                                         <h5><strong>AGUA MARINA</strong></h5>
+                                          <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/restaurantes/Agua%20Marina%20Restaurant.webp" alt="">
+                                          
+                                          <p class="mt-2 mb-4">
+                                            <b>Tipo de cocina:</b> Un restaurante de mariscos  <br><strong>Almuerzo: </strong>mercado de pescado. <br>
+                                            <strong>Cena:</strong> Internacional a la carta con ingredientes del mar<br>
+
+
+                                            <b>Horario de apertura:</b> Almuerzo de 12:00h a 17:00h. Cena de 18:00h a
+                                            23:00h<br>
+                                            <b>Código de vestimenta:</b> Informal
+                                          </p>
+                                      </div>
+                                       
+                                       
+                                    
+                                     </div>
+                                     <div class="carousel-item ">
+                                       
+                                       <div class="card-rest">
+                                         <h5><strong>RESTAURANTE CAPPELLA</strong></h5>
+                                          <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/restaurantes/capella.webp" alt="">
+                                          
+                                          <p class="mt-2 mb-4">
+                                            <b>Tipo de cocina:</b> Italoamericana<br>
+
+
+                                            <b>Horario de apertura: </b>18:00h a 23:00h todos los días<br>
+                                            <b>Código de vestimenta:</b> Informal
+                                          </p>
+                                      </div>
+                                       
+                                       
+                                     </div>
+                                     
+                                     <div class="carousel-item ">
+                                       
+                                         <div class="card-rest">
+                                         <h5><strong>KANNA BEACH CLUB</strong></h5>
+                                          <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/restaurantes/Kanna%20Beach%20Club.webp" alt="">
+                                          
+                                          <p class="mt-2 mb-4">
+                                            <b>Tipo de cocina:</b> Mixología / club de playa de moda con cocina ecológica<br>
+
+
+                                            <b>Horario de apertura:</b> 10:00h 19:00h todos los días<br>
+                                            <b>Código de vestimenta:</b> Informal
+                                          </p>
+                                      </div>
+                                      
+                                     </div>
+                                     
+                                      <div class="carousel-item ">
+                                       
+                                        <div class="card-rest">
+                                         <h5><strong>BLUE AGAVE BAR</strong></h5>
+                                          <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/restaurantes/Kanna%20Beach%20Club.webp" alt="">
+                                          
+                                          <p class="mt-2 mb-4">
+                                            <b>Tipo de cocina: </b>Mexicana<br>
+                                            <b>Almuerzo y cena: </b>Tacos<br>
+
+
+                                            <b>Horario de apertura:</b> Almuerzo de 11:00h a 17:00h; Cena de 18:00h a
+23:00h<br>
+                                            <b>Código de vestimenta:</b> Casual
+                                          </p>
+                                      </div>
+                                      
+                                    
+                                     </div>
+
+
+                                </div>
+                                <div class="carousel-control-prev" type="button" data-target="#carousel-restaurantes" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </div>
+                                <div class="carousel-control-next" type="button" data-target="#carousel-restaurantes" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </div>
+                            </div>
+
+                            
+
+                            <p style="color: #016390; font-weight: bold; " class="mt-5"> Bares</p>
+                            
+                            
+                            
+                            <div id="carousel-bar" class="carousel slide " data-ride="carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-bar" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-bar" data-slide-to="1"></li>
+
+                                </ol>
+                                <div class="carousel-inner">
+
+                                    <div class="carousel-item active">
+                                      <div class="card-bares">
+                                         <h5><strong>NUBE<br></strong></h5>
+                                          <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/img-aspectos/alimentos-1.png" alt="">
+                                          
+                                          <p class="mt-2 mb-4">
+                                             Bebe sake y pisco en este bar minimalista que rinde homenaje a
+Sudamérica y Japón. Disfruta de una experiencia coctelera innovadora y
+única con un toque cultural distintivo.<br>
+                                             <b>Tipo de cocina::</b> Bar de inspiración japonesa y peruana<br>
+                                             <b>Código de vestimenta:</b> Informal<br>
+                                             <b>Horario de apertura:</b> <br>18:00h a 23:00h todos los días<br>
+                                          </p>
+                                      </div>
+                                       
+                                    </div>
+                                    <div class="carousel-item">
+                                      <div class="card-bares">
+                                         <h5><strong>GINGER BAR<br></strong></h5>
+                                          <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/img-aspectos/alimentos-1.png" alt="">
+                                          
+                                          <p class="mt-2 mb-4">
+                                             <b>Tipo de cocina:</b> Mexicana<br>
+                                             <b>Almuerzo y cena:</b> Tacos<br>
+                                             <b>Código de vestimenta:</b> Casual<br>
+                                             <b>Horario de apertura:</b> <br>Almuerzo de 11:00am a 5:00 pm<br>
+                                             Cena de 6:00pm a 11:00 pm
+                                          </p>
+                                      </div>
+                                       
+                                    </div>
+
+                                </div>
+                                <div class="carousel-control-prev" type="button" data-target="#carousel-bar" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                </div>
+                                <div class="carousel-control-next" type="button" data-target="#carousel-bar" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -614,10 +954,9 @@
             </div>
             <!-- LLegada Tour Xcaret-->
             <div class="card">
-                <div class="card-header" id="headingXcaret">
+                <div class="card-header" id="headingXcaret" data-id="12">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseXcaret"
-                            aria-expanded="false" aria-controls="collapseXcaret">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseXcaret" aria-expanded="false" aria-controls="collapseXcaret">
                             <div class="fecha">
                                 <div><img src="./img/iconos-aspectos/tour-xcaret.png" alt="">Tour Xcaret</div>
                                 <img src="./img/chevron-right.png" alt="" class="flecha">
@@ -629,8 +968,7 @@
                     <div class="card-body">
                         <div class="contenido-card ml-3">
 
-                            <img alt="placeholder image" class="img-fluid mx-auto d-block"
-                                src="./img/img-aspectos/xcaret.png" alt="">
+                            <img alt="placeholder image" class="img-fluid mx-auto d-block" src="./img/img-aspectos/xcaret.png" alt="">
 
                             <ul><br>
                                 <li>Para tu visita usa traje de baño, zapatos para
@@ -665,10 +1003,9 @@
             </div>
             <!-- LLegada Personal de apoyo-->
             <div class="card">
-                <div class="card-header" id="headingPersonal">
+                <div class="card-header" id="headingPersonal" data-id="13">
                     <h5 class="mb-0">
-                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsePersonal"
-                            aria-expanded="false" aria-controls="collapsePersonal">
+                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapsePersonal" aria-expanded="false" aria-controls="collapsePersonal">
                             <div class="fecha">
                                 <div><img src="./img/iconos-aspectos/personal-apoyo.png" alt="">Personal de apoyo</div>
                                 <img src="./img/chevron-right.png" alt="" class="flecha">
@@ -697,7 +1034,6 @@
         </div>
     </div>
 
-    <a id="equipaje"></a>
 
     <footer class="mt-5">
         <img src="./img/matas-izq.png" alt="" class="mata-izq">
@@ -710,57 +1046,31 @@
     </footer>
 
 
-    <script>
-        $('.responsive').slick({
-            dots: true,
-            infinite: false,
-            speed: 300,
-            slidesToShow: 4,
-            slidesToScroll: 4,
-            responsive: [{
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 3,
-                    slidesToScroll: 3,
-                    infinite: true,
-                    dots: true
-                }
-            },
-            {
-                breakpoint: 600,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                }
-            }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
-            ]
-        }); </script>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/agenda-menu-mobile.js"></script>
+
+    <script>
+        let urlString = window.location.href; //obtenemos el string de la url
+        let url = new URL(urlString); //convertimos el string a un objeto
+        let fechaEvento = url.searchParams.get("dia"); //obtenemos el valor de el parametro "dia"
+
+        let todosLosCard = document.querySelectorAll('.card-header') //obtenemos todos los elementos que tengan la clase .card-header
+
+        todosLosCard.forEach((card) => { //recorremos todos los elementos del array "todosLosCard"
+            if (card.getAttribute('data-id') == fechaEvento) { // valido si el valor del dia es igual al data-id
+                card.querySelector('.btn-link').click() // si es correcto le doy click a boton de card
+            }
+        })
+    </script>
+
 
 </body>
+
 </html>
