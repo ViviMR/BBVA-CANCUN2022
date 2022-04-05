@@ -1066,8 +1066,12 @@ Sudamérica y Japón. Disfruta de una experiencia coctelera innovadora y
         todosLosCard.forEach((card) => { //recorremos todos los elementos del array "todosLosCard"
             if (card.getAttribute('data-id') == fechaEvento) { // valido si el valor del dia es igual al data-id
                 card.querySelector('.btn-link').click() // si es correcto le doy click a boton de card
+                card.querySelector('.btn-link').scrollIntoView()
             }
         })
+
+        document.querySelector('#headingOne').scrollTop()
+        document.querySelector('#headingOne').scrollIntoView()
     </script>
 
 
