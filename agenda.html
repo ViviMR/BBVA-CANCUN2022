@@ -19,7 +19,7 @@
 </head>
 
 <body>
-   
+
     <div class="menu-mobile" id="button-mobile">
         <div class="menu-mobile-close">
             <img src="../img/add.png" alt="">
@@ -38,7 +38,7 @@
                         <img src="./img/case.png" alt="Case">
                     </a>
                 </li>
-               <!--  <li class="menu-mobile-item">
+                <!--  <li class="menu-mobile-item">
                     <a href="#">
                         <h3>Reseña fotográfica</h3>
                         <img src="./img/camera.png" alt="Camera">
@@ -47,8 +47,8 @@
             </ul>
         </div>
     </div>
-    
-    
+
+
     <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg">
@@ -266,8 +266,8 @@
                         perduran hasta nuestros días.
 
                     </p>
-                    
-                    
+
+
                     <div id="carouselxcaret2" class="carousel slide mt-5" data-ride="carousel">
                         <ol class="carousel-indicators">
                             <li data-target="#carouselxcaret2" data-slide-to="0" class="active"></li>
@@ -352,7 +352,7 @@
                     </div>
                 </div>
 
-              <!--   <div class="menu-desktop-item">
+                <!--   <div class="menu-desktop-item">
                     <div class="d-inline-flex a-menu">
                         <div class="img-menu">
                             <img src="./img/camera.png" alt="">
@@ -652,10 +652,8 @@
                                         <p>Día libre para disfrutar de la playa y del All Inclusive del hotel.</p>
                                         <p>Conoce todo lo que puedes hacer <a href="aspectos.html"
                                                 class="link-rosa">aquí</a></p>
-                                                
-                                                <iframe width="100%" height="350" src="https://www.youtube.com/embed/O_x2CRXnL7I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                                                
-                                                <!-- 
+                                        <div id="player"></div><!--  Donde voy a cargar el video (iframe) -->
+                                        <!-- 
 
                                         <div id="carouseldia2" class="carousel slide" data-ride="carousel">
                                             <ol class="carousel-indicators">
@@ -866,7 +864,7 @@
 
                             </tbody>
                         </table>
-                        
+
                     </div>
                 </div>
             </div>
@@ -1118,8 +1116,70 @@
         todosLosCard.forEach((card) => { //recorremos todos los elementos del array "todosLosCard"
             if (card.getAttribute('data-id') == fechaEvento) {// valido si el valor del dia es igual al data-id
                 card.querySelector('.btn-link').click() // si es correcto le doy click a boton de card
+                card.querySelector('.btn-link').scrollIntoView()
             }
-        }) </script>
+
+            if (card.getAttribute('data-id') != "2") {
+                card.addEventListener('click', () => {
+                    player.stopVideo();
+                })
+            }
+
+        })
+
+        document.querySelector('#headingTwo').addEventListener('click', () => {
+            if (document.querySelector('#headingTwo').classList.contains('open')) {
+                player.stopVideo();
+                document.querySelector('#headingTwo').classList.remove('open')
+            } else {
+                player.playVideo();
+                document.querySelector('#headingTwo').classList.add('open')
+            }
+
+        })
+
+    </script>
+    <script>
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+                height: '350',
+                width: '100%',
+                videoId: 'O_x2CRXnL7I',
+                events: {
+                    /* 'onReady': onPlayerReady, */
+                    /* 'onStateChange': onPlayerStateChange */
+                }
+            });
+        }
+
+        // 4. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+            event.target.playVideo();
+        }
+
+        // 5. The API calls this function when the player's state changes.
+        //    The function indicates that when playing a video (state=1),
+        //    the player should play for six seconds and then stop.
+        var done = false;
+        function onPlayerStateChange(event) {
+            if (event.data == YT.PlayerState.PLAYING && !done) {
+                setTimeout(stopVideo, 6000);
+                done = true;
+            }
+        }
+        function stopVideo() {
+            player.stopVideo();
+        }
+    </script>
 
 </body>
 
