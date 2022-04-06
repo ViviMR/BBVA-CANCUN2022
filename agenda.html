@@ -49,8 +49,8 @@
     </div>
 
 
-    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
-        aria-hidden="true">
+    <div id="xoximilco" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog"
+        aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -62,10 +62,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/SdO3RKev3mk"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
+                    <div id="playerXoximilco"></div>
                     <p class="mt-5">
                         La noche de fiesta en Cancún más
                         divertida.
@@ -134,7 +131,8 @@
         </div>
     </div>
 
-    <div class="modal fade xcaret" tabindex="-1" role="dialog" aria-labelledby="xcaret" aria-hidden="true">
+    <div id="xcaretModal" class="modal fade xcaret" tabindex="-1" role="dialog" aria-labelledby="xcaret"
+        aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
@@ -146,11 +144,7 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ynmoTYeNZak"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-
+                    <div id="playerXcaret"></div>
                     <h5 class="mt-5"><strong style="color: aqua;"> Xcaret Majestuoso
                         </strong> </h5>
 
@@ -469,7 +463,7 @@
                                     </tbody>
                                 </table>
 
-                                <a data-toggle="modal" data-target=".bd-example-modal-lg">
+                                <a id="modalXoximilco" data-toggle="modal" data-target=".bd-example-modal-lg">
                                     <div class="boton-destino text-center">
                                         Conoce más sobre:<br>
                                         <img src="./img/xoximilco.png" alt="" class="d-block m-auto">
@@ -1135,8 +1129,27 @@
                 player.playVideo();
                 document.querySelector('#headingTwo').classList.add('open')
             }
-
         })
+
+        $('#xoximilco').on('shown.bs.modal', function () {
+            playerXoximilco.playVideo();
+        })
+
+        $("#xoximilco").on('hide.bs.modal', function () {
+            playerXoximilco.stopVideo();
+        });
+
+        $('#xcaretModal').on('shown.bs.modal', function () {
+            playerXcaret.playVideo();
+        })
+
+        $("#xcaretModal").on('hide.bs.modal', function () {
+            playerXcaret.stopVideo();
+        });
+        /* document.querySelector('#xoximilco').addEventListener('change', () => {
+            console.log('si cambio algo');
+
+        }) */
 
     </script>
     <script>
@@ -1149,11 +1162,32 @@
         // 3. This function creates an <iframe> (and YouTube player)
         //    after the API code downloads.
         var player;
+        var playerXoximilco;
+        var playerXcaret;
+
         function onYouTubeIframeAPIReady() {
             player = new YT.Player('player', {
                 height: '350',
                 width: '100%',
                 videoId: 'O_x2CRXnL7I',
+                events: {
+                    /* 'onReady': onPlayerReady, */
+                    /* 'onStateChange': onPlayerStateChange */
+                }
+            });
+            playerXoximilco = new YT.Player('playerXoximilco', {
+                height: '350',
+                width: '100%',
+                videoId: 'SdO3RKev3mk',
+                events: {
+                    /* 'onReady': onPlayerReady, */
+                    /* 'onStateChange': onPlayerStateChange */
+                }
+            });
+            playerXcaret = new YT.Player('playerXcaret', {
+                height: '350',
+                width: '100%',
+                videoId: 'ynmoTYeNZak',
                 events: {
                     /* 'onReady': onPlayerReady, */
                     /* 'onStateChange': onPlayerStateChange */
